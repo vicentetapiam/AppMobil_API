@@ -128,7 +128,7 @@ object ProductoInicializador {
                         id = 10,
                         nombre = "Polera Gamer Personalizada 'Level-Up'",
                         descripcion = "Una camiseta cómoda y estilizada, con la\n" +
-                                "posibilidad de personalizarla con tu gamer tag o diseño favorito.",
+                                "posibilidad de personalizarla con tu gamer tag.",
                         precio = 14990.0,
                         imagenUrl = "polera", // Nombre del archivo en drawable/
                         categoria = "Poleras Personalizadas",
