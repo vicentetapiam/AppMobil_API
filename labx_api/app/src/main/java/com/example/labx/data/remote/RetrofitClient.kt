@@ -26,7 +26,9 @@ object RetrofitClient {
      * - JSON Server local (emulador): "http://10.0.2.2:3000/"
      * - JSON Server local (dispositivo): "http://[IP_LOCAL]:3000/"
      */
-    private const val URL_BASE = "https://fakestoreapi.com/"
+    private const val URL_BASE = "https://api-dfs2-dm-production.up.railway.app/"
+    // Asegúrate de que termine con una barra inclinada "/"
+
 
     /**
      * Interceptor para logging de peticiones y respuestas HTTP

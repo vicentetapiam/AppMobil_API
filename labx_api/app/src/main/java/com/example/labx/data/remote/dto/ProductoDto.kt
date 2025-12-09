@@ -4,151 +4,101 @@ import com.example.labx.domain.model.Producto
 import com.google.gson.annotations.SerializedName
 
 /**
- * Data Transfer Object para Producto
+ * Data Transfer Object para Producto (API Railway)
  *
- * Esta clase representa la estructura de datos recibida desde la API REST.
- * Utiliza anotaciones @SerializedName para mapear los nombres de campos JSON
- * a nombres de variables en español que usamos en la aplicación.
+ * Mapea la respuesta de: https://api-dfs2-dm-production.up.railway.app/api/productos
  *
- * Ejemplo de JSON de la API:
- * {
- *   "id": 1,
- *   "title": "Fjallraven Backpack",
- *   "description": "Your perfect pack...",
- *   "price": 109.95,
- *   "category": "men's clothing",
- *   "image": "https://..."
- * }
- *
- * @author Sting Parra Silva
- * @version 1.0
+ * CAMBIOS IMPORTANTES:
+ * 1. 'precio' viene como String en esta API ("15000.00"), se convierte en el mapper.
+ * 2. 'categoria_nombre' puede ser null.
+ * 3. 'stock' ahora viene real desde el servidor.
  */
 data class ProductoDto(
-    /**
-     * Identificador único del producto
-     * Campo en JSON: "id"
-     */
     @SerializedName("id")
     val identificador: Int,
 
-    /**
-     * Nombre o título del producto
-     * Campo en JSON: "title"
-     */
-    @SerializedName("title")
+    @SerializedName("nombre")
     val titulo: String,
 
-    /**
-     * Descripción detallada del producto
-     * Campo en JSON: "description"
-     */
-    @SerializedName("description")
+    @SerializedName("descripcion")
     val descripcion: String,
 
     /**
-     * Precio del producto en la moneda de la API
-     * Campo en JSON: "price"
+     * IMPORTANTE: La API envía el precio entre comillas (String),
+     * por ejemplo: "15000.00". Lo recibimos como String para evitar errores
+     * de parseo y lo convertimos a Double en la función aModelo().
      */
-    @SerializedName("price")
-    val precio: Double,
+    @SerializedName("precio")
+    val precio: String,
 
-    /**
-     * URL de la imagen del producto
-     * Campo en JSON: "image"
-     */
-    @SerializedName("image")
+    @SerializedName("imagen")
     val urlImagen: String,
 
     /**
-     * Categoría a la que pertenece el producto
-     * Campo en JSON: "category"
+     * Puede venir null (ej: Croissant ID 54).
+     * Usamos String? (nullable) para evitar crashes.
      */
-    @SerializedName("category")
-    val categoria: String
+    @SerializedName("categoria_nombre")
+    val categoria: String?,
+
+    @SerializedName("stock")
+    val stock: Int
 )
 
 /**
- * Convierte un ProductoDto (estructura de la API) a Producto (modelo de dominio)
- *
- * Esta función de extensión permite transformar la respuesta de la API
- * al modelo interno que usa la aplicación.
- *
- * @return Objeto Producto con los datos mapeados
- *
- * Nota: El campo 'stock' usa un valor por defecto de 10 ya que
- * la API FakeStoreAPI no proporciona información de inventario.
+ * Convierte el DTO de la API Railway al Modelo de Dominio de la App.
  */
 fun ProductoDto.aModelo(): Producto {
     return Producto(
         id = this.identificador,
         nombre = this.titulo,
         descripcion = this.descripcion,
-        precio = this.precio,
+        // Convertimos el String "15000.00" a Double. Si falla, ponemos 0.0
+        precio = this.precio.toDoubleOrNull() ?: 0.0,
         imagenUrl = this.urlImagen,
-        categoria = this.categoria,
-        stock = 10
+        // Si la categoría es null, mostramos "Sin Categoría" u "Otros"
+        categoria = this.categoria ?: "General",
+        // Ahora usamos el stock real de la API
+        stock = this.stock
     )
 }
 
 /**
- * Convierte un ProductoDto a Producto con stock personalizado
- *
- * Esta versión permite especificar el stock manualmente, útil cuando
- * se obtiene información de inventario de otra fuente.
- *
- * @param stockDisponible Cantidad de stock del producto
- * @return Objeto Producto con el stock especificado
+ * Mantiene la funcionalidad de sobreescribir stock si fuera necesario,
+ * aunque ahora la API ya provee este dato.
  */
-fun ProductoDto.aModeloConStock(stockDisponible: Int): Producto {
+fun ProductoDto.aModeloConStock(stockPersonalizado: Int): Producto {
     return Producto(
         id = this.identificador,
         nombre = this.titulo,
         descripcion = this.descripcion,
-        precio = this.precio,
+        precio = this.precio.toDoubleOrNull() ?: 0.0,
         imagenUrl = this.urlImagen,
-        categoria = this.categoria,
-        stock = stockDisponible
+        categoria = this.categoria ?: "General",
+        stock = stockPersonalizado
     )
 }
 
 /**
- * Convierte un Producto (modelo de dominio) a ProductoDto (estructura de API)
- *
- * Esta función de extensión es útil para operaciones POST y PUT
- * donde necesitamos enviar datos al servidor.
- *
- * @return Objeto ProductoDto listo para serializar a JSON
- *
- * Nota: El campo 'stock' no se incluye en el DTO porque
- * la API FakeStoreAPI no acepta este campo en sus endpoints.
+ * Convierte un Producto a DTO.
+ * Nota: Convertimos el precio Double a String para respetar el formato de la API.
  */
 fun Producto.aDto(): ProductoDto {
     return ProductoDto(
         identificador = this.id,
         titulo = this.nombre,
         descripcion = this.descripcion,
-        precio = this.precio,
+        precio = this.precio.toString(),
         urlImagen = this.imagenUrl,
-        categoria = this.categoria
+        categoria = this.categoria,
+        stock = this.stock
     )
 }
 
-/**
- * Convierte una lista de ProductoDto a lista de Producto
- *
- * Función de utilidad para mapear colecciones completas de una sola vez.
- *
- * @return Lista de objetos Producto
- */
 fun List<ProductoDto>.aModelos(): List<Producto> {
     return this.map { it.aModelo() }
 }
 
-/**
- * Convierte una lista de Producto a lista de ProductoDto
- *
- * @return Lista de objetos ProductoDto
- */
 fun List<Producto>.aDtos(): List<ProductoDto> {
     return this.map { it.aDto() }
 }
