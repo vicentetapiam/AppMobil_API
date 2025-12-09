@@ -1,0 +1,118 @@
+[
+    {
+        "merged": "com.example.labx.app-debug-4:/drawable_iconlogo.png.flat",
+        "source": "com.example.labx.app-main-6:/drawable/iconlogo.png"
+    },
+    {
+        "merged": "com.example.labx.app-debug-4:/drawable_sillagamer.jpg.flat",
+        "source": "com.example.labx.app-main-6:/drawable/sillagamer.jpg"
+    },
+    {
+        "merged": "C:\\Users\\2004v\\StudioProjects\\AppMobil\\daemon\\8.13\\com.example.labx.app-debug-4:\\mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "C:\\Users\\2004v\\StudioProjects\\AppMobil\\daemon\\8.13\\com.example.labx.app-main-6:\\mipmap-anydpi-v26\\ic_launcher.xml"
+    },
+    {
+        "merged": "C:\\Users\\2004v\\StudioProjects\\AppMobil\\daemon\\8.13\\com.example.labx.app-debug-4:\\mipmap-xxhdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\2004v\\StudioProjects\\AppMobil\\daemon\\8.13\\com.example.labx.app-main-6:\\mipmap-xxhdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\2004v\\StudioProjects\\AppMobil\\daemon\\8.13\\com.example.labx.app-debug-4:\\drawable_mouse_gamer.png.flat",
+        "source": "C:\\Users\\2004v\\StudioProjects\\AppMobil\\daemon\\8.13\\com.example.labx.app-main-6:\\drawable\\mouse_gamer.png"
+    },
+    {
+        "merged": "C:\\Users\\2004v\\StudioProjects\\AppMobil\\daemon\\8.13\\com.example.labx.app-debug-4:\\mipmap-xxxhdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\2004v\\StudioProjects\\AppMobil\\daemon\\8.13\\com.example.labx.app-main-6:\\mipmap-xxxhdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "com.example.labx.app-debug-4:/drawable_pcgamer.webp.flat",
+        "source": "com.example.labx.app-main-6:/drawable/pcgamer.webp"
+    },
+    {
+        "merged": "com.example.labx.app-debug-4:/drawable_audifonos.png.flat",
+        "source": "com.example.labx.app-main-6:/drawable/audifonos.png"
+    },
+    {
+        "merged": "com.example.labx.app-debug-4:/drawable_mousepad.webp.flat",
+        "source": "com.example.labx.app-main-6:/drawable/mousepad.webp"
+    },
+    {
+        "merged": "C:\\Users\\2004v\\StudioProjects\\AppMobil\\daemon\\8.13\\com.example.labx.app-debug-4:\\mipmap-xhdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\2004v\\StudioProjects\\AppMobil\\daemon\\8.13\\com.example.labx.app-main-6:\\mipmap-xhdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "com.example.labx.app-debug-4:/drawable_catan.webp.flat",
+        "source": "com.example.labx.app-main-6:/drawable/catan.webp"
+    },
+    {
+        "merged": "C:\\Users\\2004v\\StudioProjects\\AppMobil\\daemon\\8.13\\com.example.labx.app-debug-4:\\mipmap-hdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\2004v\\StudioProjects\\AppMobil\\daemon\\8.13\\com.example.labx.app-main-6:\\mipmap-hdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\2004v\\StudioProjects\\AppMobil\\daemon\\8.13\\com.example.labx.app-debug-4:\\mipmap-xxhdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\2004v\\StudioProjects\\AppMobil\\daemon\\8.13\\com.example.labx.app-main-6:\\mipmap-xxhdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Users\\2004v\\StudioProjects\\AppMobil\\daemon\\8.13\\com.example.labx.app-debug-4:\\mipmap-xhdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\2004v\\StudioProjects\\AppMobil\\daemon\\8.13\\com.example.labx.app-main-6:\\mipmap-xhdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\2004v\\StudioProjects\\AppMobil\\daemon\\8.13\\com.example.labx.app-debug-4:\\mipmap-mdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\2004v\\StudioProjects\\AppMobil\\daemon\\8.13\\com.example.labx.app-main-6:\\mipmap-mdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\2004v\\StudioProjects\\AppMobil\\daemon\\8.13\\com.example.labx.app-debug-4:\\drawable_ic_launcher_background.xml.flat",
+        "source": "C:\\Users\\2004v\\StudioProjects\\AppMobil\\daemon\\8.13\\com.example.labx.app-main-6:\\drawable\\ic_launcher_background.xml"
+    },
+    {
+        "merged": "C:\\Users\\2004v\\StudioProjects\\AppMobil\\daemon\\8.13\\com.example.labx.app-debug-4:\\drawable_ic_launcher_foreground.xml.flat",
+        "source": "C:\\Users\\2004v\\StudioProjects\\AppMobil\\daemon\\8.13\\com.example.labx.app-main-6:\\drawable\\ic_launcher_foreground.xml"
+    },
+    {
+        "merged": "com.example.labx.app-debug-4:/drawable_mouse.webp.flat",
+        "source": "com.example.labx.app-main-6:/drawable/mouse.webp"
+    },
+    {
+        "merged": "C:\\Users\\2004v\\StudioProjects\\AppMobil\\daemon\\8.13\\com.example.labx.app-debug-4:\\mipmap-mdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\2004v\\StudioProjects\\AppMobil\\daemon\\8.13\\com.example.labx.app-main-6:\\mipmap-mdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Users\\2004v\\StudioProjects\\AppMobil\\daemon\\8.13\\com.example.labx.app-debug-4:\\mipmap-xxxhdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\2004v\\StudioProjects\\AppMobil\\daemon\\8.13\\com.example.labx.app-main-6:\\mipmap-xxxhdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Users\\2004v\\StudioProjects\\AppMobil\\daemon\\8.13\\com.example.labx.app-debug-4:\\drawable_logo.png.flat",
+        "source": "C:\\Users\\2004v\\StudioProjects\\AppMobil\\daemon\\8.13\\com.example.labx.app-main-6:\\drawable\\logo.png"
+    },
+    {
+        "merged": "com.example.labx.app-debug-4:/drawable_play5.webp.flat",
+        "source": "com.example.labx.app-main-6:/drawable/play5.webp"
+    },
+    {
+        "merged": "C:\\Users\\2004v\\StudioProjects\\AppMobil\\daemon\\8.13\\com.example.labx.app-debug-4:\\xml_data_extraction_rules.xml.flat",
+        "source": "C:\\Users\\2004v\\StudioProjects\\AppMobil\\daemon\\8.13\\com.example.labx.app-main-6:\\xml\\data_extraction_rules.xml"
+    },
+    {
+        "merged": "com.example.labx.app-debug-4:/drawable_carcassonne.jpg.flat",
+        "source": "com.example.labx.app-main-6:/drawable/carcassonne.jpg"
+    },
+    {
+        "merged": "C:\\Users\\2004v\\StudioProjects\\AppMobil\\daemon\\8.13\\com.example.labx.app-debug-4:\\mipmap-hdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\2004v\\StudioProjects\\AppMobil\\daemon\\8.13\\com.example.labx.app-main-6:\\mipmap-hdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "com.example.labx.app-debug-4:/drawable_xboxcontrol.jpg.flat",
+        "source": "com.example.labx.app-main-6:/drawable/xboxcontrol.jpg"
+    },
+    {
+        "merged": "com.example.labx.app-debug-4:/drawable_polera.jpg.flat",
+        "source": "com.example.labx.app-main-6:/drawable/polera.jpg"
+    },
+    {
+        "merged": "C:\\Users\\2004v\\StudioProjects\\AppMobil\\daemon\\8.13\\com.example.labx.app-debug-4:\\xml_backup_rules.xml.flat",
+        "source": "C:\\Users\\2004v\\StudioProjects\\AppMobil\\daemon\\8.13\\com.example.labx.app-main-6:\\xml\\backup_rules.xml"
+    },
+    {
+        "merged": "C:\\Users\\2004v\\StudioProjects\\AppMobil\\daemon\\8.13\\com.example.labx.app-debug-4:\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "C:\\Users\\2004v\\StudioProjects\\AppMobil\\daemon\\8.13\\com.example.labx.app-main-6:\\mipmap-anydpi-v26\\ic_launcher_round.xml"
+    }
+]
